@@ -1,9 +1,0 @@
-README.md
-setup.cfg
-setup.py
-yamniiMod/arseniiyamnii.egg-info/PKG-INFO
-yamniiMod/arseniiyamnii.egg-info/SOURCES.txt
-yamniiMod/arseniiyamnii.egg-info/dependency_links.txt
-yamniiMod/arseniiyamnii.egg-info/top_level.txt
-yamniiMod/history/__init__.py
-yamniiMod/history/history.py

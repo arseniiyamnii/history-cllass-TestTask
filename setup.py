@@ -1,8 +1,8 @@
-"""from distutils.core import setup
+from distutils.core import setup
 setup(
   name = 'yamniiMod',         # How you named your package folder (MyLib)
-  packages = ['yamniiMod'],   # Chose the same as "name"
-  version = '0.5',     # Start with a small number and increase it with every change you make
+  packages = ['yamniiMod.history'],   # Chose the same as "name"
+  version = '0.7',     # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'just test task',   # Give a short description about your library
   author = 'Arsenii Yamnii',                   # Type in your name
@@ -52,3 +52,4 @@ setuptools.setup(
     packages=setuptools.find_packages(where="yamniiMod"),
     python_requires=">=3.6",
 )
+"""
