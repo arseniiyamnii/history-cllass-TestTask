@@ -5,17 +5,18 @@ class history():
         """
         """
     def set_history(self, sequence, score):
-        print(score)
+        #print(score)
         if self.history_arr:
             if self.is_it_dupe_sequence(sequence):
+                self.history_arr['dupe'] += 1
                 type(self.history_arr['score'])
                 if float(score) < float(self.history_arr['score']):
-                    print("menshe")
+                    #print("menshe")
                     self.history_arr['score'] = float(score)
             else:
                 self.history_arr['arrays'].append(sequence)
         else:
-            self.history_arr = {'arrays':[sequence],'score': score}
+            self.history_arr = {'arrays':[sequence],'score': score, 'dupe': 0}
         """
         ▪ принимает 2 переменные
         sequence - массив длинной 500 (int) положительных чисел)
