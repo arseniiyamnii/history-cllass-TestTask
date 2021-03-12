@@ -7,8 +7,8 @@ from pympler import asizeof
 hist = history()
 random.seed(version=2)
 start_time = time.time()
-first_stop_at_MB = 3
-second_stop_at_MB = 5
+first_stop_at_MB = 1
+second_stop_at_MB = 2
 stopper = first_stop_at_MB
 filename='arr2.json'
 while True:
@@ -21,7 +21,7 @@ while True:
         print("--- %s seconds ---" % (time.time() - start_time))
         hist.save_history(filename)
         hist.load_history(filename)
-        if stopper != second_stop_at_MB*1024*1024:
+        if (stopper != second_stop_at_MB):
             stopper = second_stop_at_MB
         else:
             break
